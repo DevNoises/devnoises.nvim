@@ -1,7 +1,7 @@
 return {
     "neovim/nvim-lspconfig",
     dependencies = {
-        "williamboman/mason.nvim",    
+        "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
     },
     config = function()
@@ -19,7 +19,15 @@ return {
         require'lspconfig'.clangd.setup{}
         require'lspconfig'.cmake.setup{}
         require'lspconfig'.autotools_ls.setup{}
-        require'lspconfig'.lua_ls.setup{}
+        require'lspconfig'.lua_ls.setup{
+            settings = {
+                 Lua = {
+                    diagnostics = {
+                        globals = { 'vim' }
+                    }
+                }
+            }
+        }
         require'lspconfig'.pylsp.setup{}
         require'lspconfig'.jsonls.setup{}
     end,

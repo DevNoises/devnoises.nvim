@@ -1,0 +1,11 @@
+- Need clang/++ and clangd as well as a compile_commands.json for c/++ projects
+- Need npm
+- Need ripgrep
+- Need the containing folder to be named nvim at ~/.config/
+- Need a python3 package as well as python3.10-venv
+
+- Things to change
+- telescope change from arrow keys for moving up and down to something closer
+- Set up keymaps for the lsp
+- Set up suggestions for completing an entry
+- Find out why LSP keymaps use buffer = ev.buf
