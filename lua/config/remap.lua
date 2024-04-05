@@ -2,6 +2,7 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.api.nvim_set_keymap("t", "<ESC>", "<C-\\><C-n>", {noremap = true} )
+vim.api.nvim_set_keymap("n", "<leader>w", "<C-w>", {noremap = true} )
 
 -- Telescope.nvim
 vim.keymap.set("n", "<leader>pf", ":Telescope find_files<CR>")
@@ -17,8 +18,8 @@ vim.api.nvim_set_keymap("n", "<C-_>", "gcc", { noremap = false }) -- <C-_> is ac
 vim.api.nvim_set_keymap("v", "<C-_>", "gcc", { noremap = false })
 
 -- LSP
--- vim.keymap.set("n", "<leader>a", vim.lsp.buf.definition) -- go to definition
--- vim.keymap.set("n", "<leader>k", vim.lsp.buf.hover)  -- show info of object 
+vim.keymap.set("n", "<leader>d", vim.lsp.buf.definition) -- go to definition
+vim.keymap.set("n", "<leader>D", vim.lsp.buf.hover)  -- show info of object 
 -- vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename)  -- renames all things with that name. 
 -- vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action)  -- Perform fix suggested 
 -- vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references)  -- show where else it is used 
