@@ -3,6 +3,7 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.api.nvim_set_keymap("t", "<ESC>", "<C-\\><C-n>", {noremap = true} )
 vim.api.nvim_set_keymap("n", "<leader>w", "<C-w>", {noremap = true} )
+vim.api.nvim_set_keymap("n", "\\", ":noh<return>", {noremap = true} )
 
 -- Telescope.nvim
 vim.keymap.set("n", "<leader>pf", ":Telescope find_files<CR>")
