@@ -28,3 +28,5 @@ vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action)  -- Perform fix sugge
 
 -- trouble
 vim.keymap.set("n", "<leader>t", ":TroubleToggle document_diagnostics<Enter>", {noremap = true} )
+
+-- random comment
